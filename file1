@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo " enter the marks of a student "
+read marks
+if [ $marks -gt 90 ]
+then
+echo " Distinction "
+elif [ $marks -gt 75 -a $marks -le 90 ]
+then
+echo " First class "
+elif [ $marks -ge 60 -a $marks -le 75 ]
+then
+echo " second class "
+elif [ $marks -ge 35 -a $marks -le 60 ]
+then
+echo " pass "
+elif [ $marks -lt 35 ]
+then
+echo "fail"
+else
+echo " not in range "
+fi
